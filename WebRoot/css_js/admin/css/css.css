@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    
+	border:none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.enter{
+	width:210px;
+	height:200px;
+    font-family:"微软雅黑";
+	font-size:14px;
+	color:#F00;
+    margin:auto;
+    position: relative;
+    top: 465px;
+    left: -25px;
+　　}
+.transparent{
+    height:30px;
+    padding-left:20px;
+    background-color: transparent;
+	border-radius:19px;	
+	border:2px solid #ffffff;
+	color: #FFFFFF;
+	outline:none;
+}
+.dl{
+height:30px;
+width: 150px;
+border-radius:15px;	
+border:2px solid #a1a1a1;
+margin-left:35px;
+}
+ .all{
+	height:1080px;
+	background:url(../img/photo.jpg) no-repeat 50%;
+}

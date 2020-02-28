@@ -1,0 +1,109 @@
+/* CSS Document */
+
+#box{ background:url("../image/personalbg.jpg") no-repeat;background-size:2000px;}
+
+/*左侧list*/
+.personalcenterbox{width:1000px;height:620px;background:#FFFFFF;margin-left: auto;margin-right:auto;margin-top: 138px;margin-bottom: 125px;
+border:#F4F1F1 1px solid; -moz-border-radius: 15px;-webkit-border-radius: 15px;border-radius:10px;-webkit-box-shadow: #666 0px 0px 8px;-moz-box-shadow: #666 0px 0px 8px;}
+.personalcenterbox .personalleft{float:left;width:300px;height:620px;background:#e5e5e5;text-align: auto;margin-left:-2px; -webkit-border-radius:10px 0 0 10px;}
+.personalcenterbox .personalleft h3{margin-left:20px;}
+.personalcenterbox .personalleft .leftlist{width:240px;height:400px;}
+.personalcenterbox .personalleft .leftlist #action{background:#efefef;}
+.personalcenterbox .personalleft .leftlist li{width:240px;height: 40px; margin-top:20px;padding-left: 60px;padding-top: 20px;}
+.personalcenterbox .personalleft .leftlist li:hover{background:#efefef;}
+/*右侧盒子*/
+.personalcenterbox .personalright{width:700px;height:620px;float:left;}
+/*右侧个人信息*/
+.personalright .userinformationbox{width:500px;height:300px;border:#000000 1px dashed;margin-left: auto;margin-right: auto;margin-top: 130px;-moz-border-radius: 60px;-webkit-border-radius: 60px;border: #FFFFFF 10px solid;-webkit-box-shadow: #666 0px 0px 8px;-moz-box-shadow: #666 0px 0px 8px;}
+.userinformationbox .userinformation{font-family:"微软雅黑";font-weight: bolder; font-size:22px;margin-top: 75px;}
+.userinformationbox .userinformation a{margin-left:20px;}
+.userinformationbox .userinformation p{margin-top:20px;margin-left:20px;}
+.userinformationbox .userinformation .personalHeadportrait{width:80px;height:80px;-moz-border-radius: 60px;-webkit-border-radius: 60px;border: #FFFFFF 10px solid;-webkit-box-shadow: #666 0px 0px 8px;-moz-box-shadow: #666 0px 0px 8px;float:right;margin-right:80px;margin-top:-5px;}
+/*右侧修改信息*/
+.personalright .userinformationupdatebox{width:550px;height:250px;margin-left:auto;margin-right:auto;margin-top:190px;}
+.userinformationupdatebox .userinformationupdate{font-family:"微软雅黑";font-weight: bolder; font-size:18px;}
+.userinformationupdatebox #update2{margin-left: 48px;margin-top:40px;}
+.userinformationupdatebox input{height:25px;font-size:18px;}
+.userinformationupdatebox .updateheader{width:220px;height:200px;float:right;margin-top:-110px;}
+.userinformationupdatebox .header{width:95px;height:95px;border: #FFFFFF 5px solid;-webkit-box-shadow: #666 0px 0px 8px;-moz-box-shadow: #666 0px 0px 8px;}
+.userinformationupdatebox #file{width:220px;height:30px;margin-top:0px;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;}
+.userinformationupdatebox .userinformationupdate #bt1{margin-left: 165px;margin-top: 80px;}
+.userinformationupdatebox .userinformationupdate #bt2{margin-left: 20px;margin-top: -10px;}
+.userinformationupdatebox .userinformationupdate {}
+button{width:96px;height:40px;float:left;
+	background: #a3b3bd;
+
+  background-image: -webkit-linear-gradient(top, #a3b3bd, #2980b9);
+  background-image: -moz-linear-gradient(top, #a3b3bd, #2980b9);
+  background-image: -ms-linear-gradient(top, #a3b3bd, #2980b9);
+  background-image: -o-linear-gradient(top, #a3b3bd, #2980b9);
+  background-image: linear-gradient(to bottom, #a3b3bd, #2980b9);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  text-shadow: 4px 5px 2px #312424;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+.userinformationupdatebox .userinformationupdate{}
+ button:hover{  background: #42e1ed;
+  background-image: -webkit-linear-gradient(top, #42e1ed, #3498db);
+  background-image: -moz-linear-gradient(top, #42e1ed, #3498db);
+  background-image: -ms-linear-gradient(top, #42e1ed, #3498db);
+  background-image: -o-linear-gradient(top, #42e1ed, #3498db);
+  background-image: linear-gradient(to bottom, #42e1ed, #3498db);
+  color: #ffffff;
+  text-decoration: none;}
+
+/*右侧密保*/
+.personalright .useraccountprotecttitle{width:80px;height:30px;background:#BFBBBB;margin-top: 10px;float:right;margin-right: 5px;text-align: center;}
+.personalright .useraccountprotecttitle:hover{background:#7bbdf1;}
+.personalright .userpassquestionbox{width:500px;height:300px; margin-top: 150px;margin-left: 180px;}
+.userpassquestionbox .userpassquestion{font-family:"微软雅黑";font-weight: bolder; font-size:18px;}
+.userpassquestionbox .userpassquestion button{margin-top:80px;margin-left: 35px;}
+.userpassquestion input{height:25px;font-size:18px;}
+		/*旧密保*/
+.userpassquestion .useroldquestion input{margin-bottom: 20px;}
+.useroldquestion .old1{margin-left: 5px;}
+		/*新密保*/
+.userpassquestion .usernewquestion input{margin-top:20px;}
+.usernewquestion .PasswordProtection{width:200px;height:32px;font-size: 18px;}
+/*右侧密码*/
+.personalright .userpassupdatebox{width:500px;height:300px; margin-top: 210px;margin-left: 180px;}
+.userpassupdatebox .userpassupdate{font-family:"微软雅黑";font-weight: bolder; font-size:18px;}
+.userpassupdatebox .userpassupdate button{margin-top:52px;margin-left: 35px;}
+.userpassupdate input{height:25px;font-size:18px;margin-bottom: 20px;}
+.userpassupdate #form-oldpass{margin-left:18px;}
+.userpassupdate #form-newpass{margin-left:36px;}
+
+
+.personalright .usercommentbox{width: 600px;height: 500px; margin-left:auto;margin-right:auto;margin-top:20px;}
+.usercommentbox .usercomment{width: 600px;height: 90px;overflow: hidden;background:#FFFFFF; border:#F4F1F1 4px solid;margin-bottom: 20px;}
+.usercomment .user{color: #4784CC;}
+.usercomment .title{color:tomato;}
+.usercomment .title:hover{color:#3792CC;text-decoration:underline;}
+.usercomment .content{color:#B3C2CD;text-indent:2em;overflow: hidden;text-overflow:ellipsis;-webkit-box-orient: vertical;display:-webkit-box;-webkit-line-clamp: 2;}
+.usercomment .content:hover{color:#28558A;text-decoration:underline;}
+.usercomment .createtime{float:right;}
+
+
+
+
+
+
+
+
+
+.personalright .usersupportbox{width: 600px;height: 500px;margin-left:auto;margin-right:auto;margin-top: 60px;}
+.usersupportbox .usersupport{width: 600px;height: 40px;overflow: hidden;background:#FFFFFF; border:#F4F1F1 1px solid; -moz-border-radius: 15px;-webkit-box-shadow: #666 0px 0px 1px;-moz-box-shadow: #666 0px 0px 1px;margin-bottom: 10px;font-family:"微软雅黑";font-weight: bolder;margin-bottom: 40px;}
+.usersupport h3{float:left;font-size: 26px;width:350px;height:40px;margin-left: 10px;}
+
+
+
+.usersupport #support{width:35px;height:40px;float:right;margin-right: 10px;}
+.usersupportbox .supportdate{float:right;font-size: 26px;margin-right: 10px;}
+
+

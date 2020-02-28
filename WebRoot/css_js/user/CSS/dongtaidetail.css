@@ -1,0 +1,31 @@
+/* CSS Document */
+.login1,.login2{margin-top:70px;margin-left: 300px;}
+/*名句*/
+.PersonalSignature{width:900px;height:50px;float:left;margin-top:20px;margin-left: 40px;}
+.PersonalSignature p{float:right;font-size: 16px;color:#A49A9A;}
+.PersonalSignature hr{color:#000000;margin-top: 8px;}
+/*整体盒子*/
+.dongtaidetailbox{width:900px;background:#FFFFFF;;float:left;font-family: "微软雅黑";margin-bottom: 40px;margin-left: 40px;}
+/*动态内容*/
+.dongtaidetail{width:750px;margin-left:70px;margin-top:30px;float:left;}
+.dongtaidetail h3{font-size: 22px;}
+.dongtaidetail .detailcentent{margin-top: 15px; letter-spacing:2px;color:#6F6F6F;}
+.dongtaibottom li{float: left;list-style: none;margin-top: 15px;margin-left: 20px;}
+.dongtaibottom .author{font-size: 14px;color:#566573;}
+.dongtaibottom .createtime{font-size: 14px;color:#566573;}
+/*评论框*/
+.dongtaidetailbox .comment{width:750px;height:180px;float:left;margin-left: 60px;margin-top:170px;}
+.comment .detailcomment{width:700px;height: 100px;margin-left: 20px;}
+.comment button[type="submit"]{float:right;margin-right: 30px; margin-top:20px;}
+
+/*评论显示*/
+.dongtaidetailbox .usercommentsbox{width:750px;float:left;margin-left: 60px;margin-bottom: 40px;}
+.usercommentsbox .usercomments{width:750px;float:left;margin-top: 20px;}
+.usercomments .detailheader{float:left;width:40px;height:40px;-moz-border-radius: 30px;-webkit-border-radius: 30px;border: #FFFFFF 5px solid;-webkit-box-shadow: #666 0px 0px 8px;-moz-box-shadow: #666 0px 0px 8px;margin-left:40px;margin-top:10px;}
+.usercomments .username{float:left;margin-left: 15px; font-size:18px;margin-top:35px;}
+.usercomments .username:hover{color:#57B1C0;}
+.usercomments .displaycomment{float:left;width:600px;margin-left: 20px;margin-right: 20px;margin-top:10px;color:#6F6F6F;}
+
+
+
+

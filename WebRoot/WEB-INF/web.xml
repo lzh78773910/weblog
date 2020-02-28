@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+    <filter>
+    <filter-name>Filterutf8</filter-name>
+    <filter-class>com.blog.Filter.Filterutf8</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filterutf8</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+ 
+    <filter>
+    <filter-name>Filteradmin</filter-name>
+    <filter-class>com.blog.Filter.Filteradmin</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filteradmin</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+    <filter-mapping>
+    <filter-name>Filteradmin</filter-name>
+    <url-pattern>/adminservlet/*</url-pattern>
+  </filter-mapping>
+   
+    <filter>
+    <filter-name>FilterUser</filter-name>
+    <filter-class>com.blog.Filter.FilterUser</filter-class>
+    </filter>
+  
+      <filter-mapping>
+    <filter-name>FilterUser</filter-name>
+    <url-pattern>/userservlet/*</url-pattern>
+     <url-pattern>/user/u_centerleft.jsp</url-pattern>
+  </filter-mapping>
+   
+   
+  <servlet>
+    <servlet-name>AdminuserLoginServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AdminuserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminuserRegServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AdminuserRegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.ChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DongTaiServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.DongTaiServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DongTaiRBServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.DongTaiRBServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DongTaiAddServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.DongTaiAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DongTaiDeleteServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.DongTaiDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DongTaiDetails</servlet-name>
+    <servlet-class>com.blog.servlet.admin.DongTaiDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DongTaiModifyServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.DongTaiModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DongTaiObtainServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.DongTaiObtainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserloginServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserloginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserRegServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserRegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserIndexServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlbumServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AlbumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlbumsAddServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AlbumsAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlbumsByis_used</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AlbumsByis_used</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserListServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.UserListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserByis_used</servlet-name>
+    <servlet-class>com.blog.servlet.admin.UserByis_used</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlbumRBServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AlbumRBServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlbumObtainServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AlbumObtainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlbumModifyServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AlbumModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlbumDetailsServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.AlbumDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhotoAddServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.PhotoAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhoneByis_used</servlet-name>
+    <servlet-class>com.blog.servlet.admin.PhoneByis_used</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhotosAllServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.PhotosAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhotosRBAllServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.PhotosRBAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhoneAllforByis_used</servlet-name>
+    <servlet-class>com.blog.servlet.admin.PhoneAllforByis_used</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserInformationServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserInformationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserObtainUpdateServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserObtainUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserShouSuoServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserShouSuoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DianZanPastServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.DianZanPastServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MiBaoUpdateServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.MiBaoUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserObtainProtectServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.UserObtainProtectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PassUpdateServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.PassUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowAlbumServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.ShowAlbumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowAlbumDetailsServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.ShowAlbumDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowDongTaiDetails</servlet-name>
+    <servlet-class>com.blog.servlet.user.ShowDongTaiDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PingLunAddServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.PingLunAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DianZanAlbumServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.DianZanAlbumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PingLunPastServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.PingLunPastServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ZhaoHuiPassServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.ZhaoHuiPassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedbackAddServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.FeedbackAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedbackHuiFuServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.FeedbackHuiFuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedbackAminHuiFuServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.FeedbackAminHuiFuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.FeedbackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedbackWeiDuServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.FeedbackWeiDuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedbackDetailsServlet</servlet-name>
+    <servlet-class>com.blog.servlet.admin.FeedbackDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ValidateCodeServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.ValidateCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowiFeedbackServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.ShowiFeedbackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowFeedbackDetailsServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.ShowFeedbackDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedbackForAdminuserServlet</servlet-name>
+    <servlet-class>com.blog.servlet.user.FeedbackForAdminuserServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AdminuserLoginServlet</servlet-name>
+    <url-pattern>/AdminuserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminuserRegServlet</servlet-name>
+    <url-pattern>/adminservlet/AdminuserRegServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <url-pattern>/adminservlet/ChangePasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DongTaiServlet</servlet-name>
+    <url-pattern>/adminservlet/DongTaiServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DongTaiRBServlet</servlet-name>
+    <url-pattern>/adminservlet/DongTaiRBServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DongTaiAddServlet</servlet-name>
+    <url-pattern>/adminservlet/DongTaiAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DongTaiDeleteServlet</servlet-name>
+    <url-pattern>/adminservlet/DongTaiDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DongTaiDetails</servlet-name>
+    <url-pattern>/adminservlet/DongTaiDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DongTaiModifyServlet</servlet-name>
+    <url-pattern>/adminservlet/DongTaiModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DongTaiObtainServlet</servlet-name>
+    <url-pattern>/adminservlet/DongTaiObtainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserloginServlet</servlet-name>
+    <url-pattern>/UserloginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserRegServlet</servlet-name>
+    <url-pattern>/UserRegServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserIndexServlet</servlet-name>
+    <url-pattern>/UserIndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlbumServlet</servlet-name>
+    <url-pattern>/adminservlet/AlbumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlbumsAddServlet</servlet-name>
+    <url-pattern>/adminservlet/AlbumsAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlbumsByis_used</servlet-name>
+    <url-pattern>/adminservlet/AlbumsByis_used</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserListServlet</servlet-name>
+    <url-pattern>/adminservlet/UserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserByis_used</servlet-name>
+    <url-pattern>/adminservlet/UserByis_used</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlbumRBServlet</servlet-name>
+    <url-pattern>/adminservlet/AlbumRBServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlbumObtainServlet</servlet-name>
+    <url-pattern>/adminservlet/AlbumObtainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlbumModifyServlet</servlet-name>
+    <url-pattern>/adminservlet/AlbumModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlbumDetailsServlet</servlet-name>
+    <url-pattern>/adminservlet/AlbumDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhotoAddServlet</servlet-name>
+    <url-pattern>/adminservlet/PhotoAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhoneByis_used</servlet-name>
+    <url-pattern>/adminservlet/PhoneByis_used</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhotosAllServlet</servlet-name>
+    <url-pattern>/adminservlet/PhotosAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhotosRBAllServlet</servlet-name>
+    <url-pattern>/adminservlet/PhotosRBAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhoneAllforByis_used</servlet-name>
+    <url-pattern>/adminservlet/PhoneAllforByis_used</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserInformationServlet</servlet-name>
+    <url-pattern>/userservlet/UserInformationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/userservlet/UserUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserObtainUpdateServlet</servlet-name>
+    <url-pattern>/userservlet/UserObtainUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShouSuoServlet</servlet-name>
+    <url-pattern>/UserShouSuoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DianZanPastServlet</servlet-name>
+    <url-pattern>/userservlet/DianZanPastServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MiBaoUpdateServlet</servlet-name>
+    <url-pattern>/userservlet/MiBaoUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserObtainProtectServlet</servlet-name>
+    <url-pattern>/userservlet/UserObtainProtectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PassUpdateServlet</servlet-name>
+    <url-pattern>/userservlet/PassUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowAlbumServlet</servlet-name>
+    <url-pattern>/ShowAlbumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowAlbumDetailsServlet</servlet-name>
+    <url-pattern>/ShowAlbumDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowDongTaiDetails</servlet-name>
+    <url-pattern>/ShowDongTaiDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PingLunAddServlet</servlet-name>
+    <url-pattern>/userservlet/PingLunAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DianZanAlbumServlet</servlet-name>
+    <url-pattern>/userservlet/DianZanAlbumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PingLunPastServlet</servlet-name>
+    <url-pattern>/userservlet/PingLunPastServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZhaoHuiPassServlet</servlet-name>
+    <url-pattern>/ZhaoHuiPassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackAddServlet</servlet-name>
+    <url-pattern>/userservlet/FeedbackAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackHuiFuServlet</servlet-name>
+    <url-pattern>/userservlet/FeedbackHuiFuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackAminHuiFuServlet</servlet-name>
+    <url-pattern>/adminservlet/FeedbackAminHuiFuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <url-pattern>/adminservlet/FeedbackServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackWeiDuServlet</servlet-name>
+    <url-pattern>/adminservlet/FeedbackWeiDuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackDetailsServlet</servlet-name>
+    <url-pattern>/adminservlet/FeedbackDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidateCodeServlet</servlet-name>
+    <url-pattern>/ValidateCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowiFeedbackServlet</servlet-name>
+    <url-pattern>/userservlet/ShowiFeedbackServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowFeedbackDetailsServlet</servlet-name>
+    <url-pattern>/userservlet/ShowFeedbackDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackForAdminuserServlet</servlet-name>
+    <url-pattern>/FeedbackForAdminuserServlet</url-pattern>
+  </servlet-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

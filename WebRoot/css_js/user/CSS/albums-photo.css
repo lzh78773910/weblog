@@ -1,0 +1,55 @@
+/* CSS Document */
+/*相册*/
+.albums1{height:90%;}
+.albmusbox {float:left;
+	width:1600px;
+	margin: 40px 0 40px 140px;
+	border: 1px solid #C1C1C1;
+    background: #ffffff;
+	border-radius: 10px;}
+.albums {height: 300px;
+    width: 300px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 50px;
+    border: 1px solid #C1C1C1;
+    border-radius: 6px;
+    background:#DCDCDC;
+	margin-bottom: 40px;}
+.albumstitle {text-align: center;
+    font-size: 22px;
+    margin-top: 10px;}
+.photostyle {margin-left: 25px;
+    margin-top: 20px;}
+
+
+
+
+
+/*图片显示*/
+.photosupportbox{width:500px;height:115px;margin-left: 20px;margin-top: 10px;}
+.like{ width:66px;height: 66px; font-size:66px;  color:#ccc; cursor:pointer;float:left;}
+.like1{ width:66px;height: 66px; font-size:66px;  color: red; cursor:pointer;float:left;}
+.albumscontent{width:400px;height:115px;color:#9C9C9C;float:left;}
+.albumscontent p{margin-bottom: 10px;margin-left: 20px;margin-top: 0px;}
+.albumscontent span{color:tomato;}
+.container {width: 1800px;
+    height: 100%;
+     margin: 10px 90px 90px 90px;}
+.container img {padding: 10px 10px 15px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    z-index: 1;}
+.pic {width: 200px;
+    margin-right: 1%;}
+.container>img:hover {
+    box-shadow: 15px 15px 20px rgba(50,50,50,0.4);
+    transform: rotate(0deg) scale(2.20);
+    -webkit-transform: rotate(0deg) scale(1.50);
+    z-index: 1000;}

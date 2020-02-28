@@ -1,0 +1,69 @@
+/* CSS Document */
+
+
+#box{background: url("../image/feedbackbg1.jpg") no-repeat;background-size:2000px;}
+/*反馈整体盒子*/
+.message{ overflow: hidden;
+		width: 1100px;
+		height: 480px;
+		margin: auto;
+		border: 1px solid #efefef;
+		margin-top: 165px;
+		margin-bottom: 240px;
+		background: #FFFFFF;
+		-webkit-border-radius:10px 10px 10px 10px;}
+/*反馈左侧*/
+.messageleft{   overflow-x: hidden;
+  overflow-y: scroll;
+		width: 200px;
+		height: 478px;
+		border: 1px solid #efefef;
+		background:#2E9394;
+		text-align: center;	
+		float: left;
+		-webkit-border-radius:10px 0 0 10px;}
+/*左侧下拉框设为无*/
+.messageleft::-webkit-scrollbar { width: 0 !important }
+.messageleft::-webkit-scrollbar { display: none;}
+.messageleft li{font-size: 18px;
+		color: #FFFFFF;
+		padding: 10px 0 0 0;}
+.messageleft p{color: #FFFFFF;}
+.messageleft .admin input[type=button]{
+		width:200px;
+		height: 60px;
+		background: #2E9394;
+		color:#FFFFFF;
+		font-size:18px;
+		border: 1px solid #EFEFEF;
+		border-left: none;
+		border-right: none;}
+.messageleft .admin input[type=button]:hover { background: #3AB4B5;}
+/*右侧反馈*/
+.messageright{float: left;
+		width: 70%;
+		height: 80%;
+		margin: 50px 50px 0 60px;}
+.textarea{width: 800px;
+		height: 300px;}
+.messageright button[type=submit]{
+    padding: 0 28px;
+    outline: none;
+    height: 40px;
+    width: 184px;
+    border: none;
+    border-bottom: 2px solid #3AB4B5;
+    color: #333;
+    font-size: 16px;
+	float: right;
+	margin-top: 30px;}
+.messageright button[type=submit]{ background-color: #3AB4B5;
+    width: 120px;
+    border-radius:50px; 
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;}
+.messageright button[type=submit]:hover{background-color: #2E9394;}

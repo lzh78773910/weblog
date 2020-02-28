@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="profiler.settings.instrument.empty.methods">true</entry>
+<entry key="ProfilerCPUSettings_profile_runnables">true</entry>
+<entry key="profiler.settings.n.profiled.threads.limit">32</entry>
+<entry key="ProfilerCPUSettings_filter_type">2</entry>
+<entry key="profiler.settings.obj.alloc.stack.sampling.depth">-1</entry>
+<entry key="profiler.settings.instrument.method.invoke">true</entry>
+<entry key="profiler.settings.instr.scheme">1</entry>
+<entry key="ProfilerMemorySettings_track_every">10</entry>
+<entry key="ProfilerMemorySettings_mode">4</entry>
+<entry key="ProfilerCPUSettings_root_classes">com.blog.Filter.**
+com.blog.Idao.**
+com.blog.Iservice.**
+com.blog.bean.**
+com.blog.dao.impl.**
+com.blog.service.impl.**
+com.blog.servlet.admin.**
+com.blog.servlet.user.**
+com.blog.util.**
+</entry>
+<entry key="ProfilerCPUSettings_filter_value">com.blog.Filter.*,&#13;
+com.blog.Idao.*,&#13;
+com.blog.Iservice.*,&#13;
+com.blog.bean.*,&#13;
+com.blog.dao.impl.*,&#13;
+com.blog.service.impl.*,&#13;
+com.blog.servlet.admin.*,&#13;
+com.blog.servlet.user.*,&#13;
+com.blog.util.*</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">true</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="ProfilerMemorySettings_stacktraces">-1</entry>
+<entry key="profiler.settings.sampling.interval">10</entry>
+<entry key="profiler.settings.cpu.profiling.type">0</entry>
+</properties>

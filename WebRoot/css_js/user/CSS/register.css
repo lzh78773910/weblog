@@ -1,0 +1,45 @@
+/* CSS Document */
+.register {
+	margin-right: auto;
+	margin-left:auto;
+	margin-top:6%;
+    width: 900px;
+    height: 695px;;
+	text-align: center;}
+.register .registercontent {font-size:18px;}
+.register .registercontent input {width:250px;height:30px;
+    margin-bottom: 20px;
+	font-size:16px;}
+.register .registercontent #userName{margin-left:20px;}
+.register .registercontent #userPasword{margin-left:35px;}
+.register .registercontent #userAnswer{margin-left:35px;margin-top: 35px;}
+.register .registercontent .Verification {position:absolute;
+	margin-top:5px;
+	margin-left: 5px;
+    color: red;}
+.Verification1{margin-top:37px;position:absolute;
+	margin-left: 5px;
+    color: red;}
+.register .registercontent #form-answer .Verification{margin-top:20px;}
+.register .registercontent button[type=submit]{padding: 0 28px;
+    outline: none;
+    height: 40px;
+    width: 184px;
+    border: none;
+    border-bottom: 2px solid #3AB4B5;
+    color: #333;
+    font-size: 16px;}
+.register .registercontent button[type=submit]{background-color: #3AB4B5;
+    width: 120px;
+    border-radius:50px; 
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;}
+
+.register .registercontent button[type=submit]:hover{background-color: #2E9394;}
+.register .registercontent a{text-decoration: underline;color:blue;}
+
+.register .registercontent .PasswordProtection{width:250px;height:35px;margin-top:20px;}
